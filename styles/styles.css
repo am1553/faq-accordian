@@ -42,10 +42,14 @@ body main .container {
   margin-top: 2rem;
 }
 
+body main .container {
+  margin-bottom: 3rem;
+}
+
 body main .container .accordian-container {
   width: 80%;
   margin: 0 auto;
-  padding-top: 8rem;
+  padding: 8rem 0 2rem;
 }
 
 body main .container .accordian-container h1 {
@@ -80,13 +84,23 @@ body main .container .accordian-container .accordian-question-answer .accordian-
   background: transparent;
 }
 
+body main .container .accordian-container .accordian-question-answer .accordian-question button .bold-text {
+  font-weight: 700;
+}
+
 body main .container .accordian-container .accordian-question-answer .accordian-answer {
-  height: 0;
-  overflow: hidden;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  max-height: 5rem;
 }
 
 body main .container .accordian-container .accordian-question-answer .accordian-answer p {
   padding: 1rem 0 1rem;
+}
+
+body main .container .accordian-container .accordian-question-answer .close {
+  max-height: 0;
+  overflow: hidden;
 }
 
 body main .container .accordian-container .accordian-question-answer::after {
