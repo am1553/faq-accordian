@@ -1,5 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  min-height: 100vh;
+  width: 100%;
+}
+
+body main {
+  min-height: 100vh;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 7rem;
+}
+
+body main .container {
+  width: 90%;
+  min-height: 70vh;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+body main .container .accordian-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+body main .container .accordian-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+body main .container .accordian-container .accordian-question-answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 0 0.5rem;
+}
+
+body main .container .accordian-container .accordian-question-answer .accordian-question button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: transparent;
+}
+
+body main .container .accordian-container .accordian-question-answer .accordian-answer {
+  height: 0;
+  overflow: hidden;
+}
+
+body main .container .accordian-container .accordian-question-answer .accordian-answer p {
+  padding: 1rem 0 1rem;
+}
+
+body main .container .accordian-container .accordian-question-answer::after {
+  content: "";
+  width: 100%;
+  margin: 5px 0 5px;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+body main {
+  position: relative;
+}
+
+body main .container {
+  position: relative;
+}
+
+body main .container .image-wrapper {
+  width: 13rem;
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body main .container .image-wrapper .image-hero {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+body main .container .image-wrapper .image-background {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 95px;
 }
 /*# sourceMappingURL=styles.css.map */

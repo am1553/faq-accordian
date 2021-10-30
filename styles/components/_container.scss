@@ -1,0 +1,15 @@
+body {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    .container {
+      width: 90%;
+      min-height: 70vh;
+      background-color: white;
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+  }
+}

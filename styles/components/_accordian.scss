@@ -1,0 +1,45 @@
+body {
+  main {
+    .container {
+      .accordian-container {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8rem;
+        h1 {
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: 3rem;
+        }
+
+        .accordian-question-answer {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem 0 0.5rem;
+          .accordian-question {
+            button {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: none;
+              background: transparent;
+            }
+          }
+          .accordian-answer {
+            height: 0;
+            overflow: hidden;
+            p {
+              padding: 1rem 0 1rem;
+            }
+          }
+        }
+        .accordian-question-answer::after {
+          content: "";
+          width: 100%;
+          margin: 5px 0 5px;
+          border-bottom: 1px solid $divider-light-grayish-blue;
+        }
+      }
+    }
+  }
+}

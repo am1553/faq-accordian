@@ -1,0 +1,26 @@
+body {
+  main {
+    position: relative;
+    .container {
+      position: relative;
+      .image-wrapper {
+        width: 13rem;
+        position: absolute;
+        top: -95px;
+        left: 50%;
+        transform: translateX(-50%);
+        .image-hero {
+          width: 100%;
+          min-height: 100%;
+          position: absolute;
+        }
+        .image-background {
+          width: 100%;
+          min-height: 100%;
+          position: absolute;
+          top: 95px;
+        }
+      }
+    }
+  }
+}
