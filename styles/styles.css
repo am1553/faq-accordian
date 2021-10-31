@@ -175,6 +175,7 @@ body main .container .accordian-container .accordian-question-answer .accordian-
 
 body main .container .accordian-container .accordian-question-answer .accordian-question button .bold-text {
   font-weight: 700;
+  color: #1d1e35;
 }
 
 body main .container .accordian-container .accordian-question-answer .accordian-question button .btn-arrow {
@@ -196,6 +197,7 @@ body main .container .accordian-container .accordian-question-answer .accordian-
 
 body main .container .accordian-container .accordian-question-answer .accordian-answer p {
   padding: 1rem 0 1rem;
+  color: #787887;
 }
 
 body main .container .accordian-container .accordian-question-answer .close {
