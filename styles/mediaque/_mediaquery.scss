@@ -1,0 +1,73 @@
+@media screen and (max-width: 720px) {
+  main {
+    .container {
+      margin-top: 10rem;
+      margin-bottom: 3rem;
+      .desktop-image-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    max-width: 80rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .image-wrapper {
+        display: none;
+      }
+      position: relative;
+      .desktop-image-wrapper {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        grid-column: 1/1;
+        position: relative;
+
+        .pattern-wrapper {
+          width: 100%;
+          height: 100%;
+          background: url(/images/bg-pattern-desktop.svg) no-repeat;
+          background-size: contain;
+          background-position-x: -50px;
+          background-position-y: 100px;
+          .box {
+            position: absolute;
+            top: 45%;
+            left: -100px;
+          }
+          .woman {
+            position: absolute;
+            max-width: 100%;
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .accordian-container {
+        grid-column: 2;
+        h1 {
+          text-align: left;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,87 @@
+@media screen and (max-width: 720px) {
+  main .container {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
+  main .container .desktop-image-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    max-width: 80rem;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    position: relative;
+  }
+  main .container .image-wrapper {
+    display: none;
+  }
+  main .container .desktop-image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    position: relative;
+  }
+  main .container .desktop-image-wrapper .pattern-wrapper {
+    width: 100%;
+    height: 100%;
+    background: url(/images/bg-pattern-desktop.svg) no-repeat;
+    background-size: contain;
+    background-position-x: -50px;
+    background-position-y: 100px;
+  }
+  main .container .desktop-image-wrapper .pattern-wrapper .box {
+    position: absolute;
+    top: 45%;
+    left: -100px;
+  }
+  main .container .desktop-image-wrapper .pattern-wrapper .woman {
+    position: absolute;
+    max-width: 100%;
+    left: -50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  main .container .accordian-container {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  main .container .accordian-container h1 {
+    text-align: left;
+  }
+  main .container .accordian-container p {
+    text-align: left;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,7 +129,6 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 7rem;
 }
 
 body main .container {
@@ -53,13 +136,8 @@ body main .container {
   min-height: 70vh;
   background-color: white;
   border-radius: 1rem;
-  margin-top: 2rem;
   -webkit-box-shadow: 0px 30px 25px -25px black;
           box-shadow: 0px 30px 25px -25px black;
-}
-
-body main .container {
-  margin-bottom: 3rem;
 }
 
 body main .container .accordian-container {
@@ -92,6 +170,7 @@ body main .container .accordian-container .accordian-question-answer .accordian-
           align-items: center;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 body main .container .accordian-container .accordian-question-answer .accordian-question button .bold-text {
@@ -103,6 +182,10 @@ body main .container .accordian-container .accordian-question-answer .accordian-
           transform: rotate(180deg);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+body main .container .accordian-container .accordian-question-answer .accordian-question button:hover p {
+  color: #f47c57;
 }
 
 body main .container .accordian-container .accordian-question-answer .accordian-answer {
